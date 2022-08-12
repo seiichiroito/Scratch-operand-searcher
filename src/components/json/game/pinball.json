@@ -1,0 +1,508 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": { "`jEk@4|i[#Fk?(8x)AV.-my variable": ["my variable", 0] },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 1,
+      "costumes": [
+        {
+          "name": "backdrop1",
+          "dataFormat": "svg",
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        },
+        {
+          "name": "Light",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "4b98c07876ed8997c3762e75790507b4",
+          "md5ext": "4b98c07876ed8997c3762e75790507b4.svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [
+        {
+          "name": "pop",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "videoState": "on",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "Paddle",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "I.vF`]H,T#3B[I2M6Y~5": {
+          "opcode": "event_whenkeypressed",
+          "next": "94ZMelu4_YuSX4NCf{L8",
+          "parent": null,
+          "inputs": {},
+          "fields": { "KEY_OPTION": ["down arrow", null] },
+          "shadow": false,
+          "topLevel": true,
+          "x": 48,
+          "y": 232
+        },
+        "94ZMelu4_YuSX4NCf{L8": {
+          "opcode": "motion_changeyby",
+          "next": null,
+          "parent": "I.vF`]H,T#3B[I2M6Y~5",
+          "inputs": { "DY": [1, [4, "-10"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "J=+h2s]]kIcUn:*|tVJl": {
+          "opcode": "event_whenkeypressed",
+          "next": "op).Y2rJXx(!|Pr:a!Yi",
+          "parent": null,
+          "inputs": {},
+          "fields": { "KEY_OPTION": ["up arrow", null] },
+          "shadow": false,
+          "topLevel": true,
+          "x": 48,
+          "y": 64
+        },
+        "op).Y2rJXx(!|Pr:a!Yi": {
+          "opcode": "motion_changeyby",
+          "next": null,
+          "parent": "J=+h2s]]kIcUn:*|tVJl",
+          "inputs": { "DY": [1, [4, "10"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "y!Gjue#;Xe(wgsH(RAKc": {
+          "opcode": "event_whenflagclicked",
+          "next": "yLr[o)3i#@v*.:25W/ht",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 48,
+          "y": 400
+        },
+        "yLr[o)3i#@v*.:25W/ht": {
+          "opcode": "motion_gotoxy",
+          "next": "2!5bu@hh26?pyC3-D##q",
+          "parent": "y!Gjue#;Xe(wgsH(RAKc",
+          "inputs": { "X": [1, [4, "200"]], "Y": [1, [4, "0"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "2!5bu@hh26?pyC3-D##q": {
+          "opcode": "motion_pointindirection",
+          "next": null,
+          "parent": "yLr[o)3i#@v*.:25W/ht",
+          "inputs": { "DIRECTION": [1, [8, "180"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "paddle",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "15864fac7d38bb94c1ec3a199de96c26",
+          "md5ext": "15864fac7d38bb94c1ec3a199de96c26.svg",
+          "rotationCenterX": 44,
+          "rotationCenterY": 7
+        }
+      ],
+      "sounds": [
+        {
+          "name": "boing",
+          "assetId": "53a3c2e27d1fb5fdb14aaf0cb41e7889",
+          "dataFormat": "wav",
+          "format": "adpcm",
+          "rate": 22050,
+          "sampleCount": 7113,
+          "md5ext": "53a3c2e27d1fb5fdb14aaf0cb41e7889.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 200,
+      "y": 0,
+      "size": 100,
+      "direction": 180,
+      "draggable": false,
+      "rotationStyle": "all around"
+    },
+    {
+      "isStage": false,
+      "name": "Paddle2",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "=.d(o|W}k6s,4Y({aj5O": {
+          "opcode": "event_whenkeypressed",
+          "next": "v%M:VCwUu+gXd+?||KlY",
+          "parent": null,
+          "inputs": {},
+          "fields": { "KEY_OPTION": ["s"] },
+          "shadow": false,
+          "topLevel": true,
+          "x": 48,
+          "y": 64
+        },
+        "v%M:VCwUu+gXd+?||KlY": {
+          "opcode": "motion_changeyby",
+          "next": null,
+          "parent": "=.d(o|W}k6s,4Y({aj5O",
+          "inputs": { "DY": [1, [4, "-10"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "jD6OnulJ3v*([r0|+~O(": {
+          "opcode": "event_whenkeypressed",
+          "next": "D!+0+Sp%5`.zRrev:_*8",
+          "parent": null,
+          "inputs": {},
+          "fields": { "KEY_OPTION": ["w"] },
+          "shadow": false,
+          "topLevel": true,
+          "x": 48,
+          "y": 232
+        },
+        "D!+0+Sp%5`.zRrev:_*8": {
+          "opcode": "motion_changeyby",
+          "next": null,
+          "parent": "jD6OnulJ3v*([r0|+~O(",
+          "inputs": { "DY": [1, [4, "10"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "+NX7f?Y~vd8HmpT}KqHu": {
+          "opcode": "motion_pointindirection",
+          "next": null,
+          "parent": ";yhz,}[wnf4C?+LXx}dO",
+          "inputs": { "DIRECTION": [1, [8, "180"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "UhTaY`H;#-uV1m}eHXgQ": {
+          "opcode": "event_whenflagclicked",
+          "next": ";yhz,}[wnf4C?+LXx}dO",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 48,
+          "y": 400
+        },
+        ";yhz,}[wnf4C?+LXx}dO": {
+          "opcode": "motion_gotoxy",
+          "next": "+NX7f?Y~vd8HmpT}KqHu",
+          "parent": "UhTaY`H;#-uV1m}eHXgQ",
+          "inputs": { "X": [1, [4, "-200"]], "Y": [1, [4, "0"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "paddle",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "15864fac7d38bb94c1ec3a199de96c26",
+          "md5ext": "15864fac7d38bb94c1ec3a199de96c26.svg",
+          "rotationCenterX": 44,
+          "rotationCenterY": 7
+        }
+      ],
+      "sounds": [
+        {
+          "name": "boing",
+          "assetId": "53a3c2e27d1fb5fdb14aaf0cb41e7889",
+          "dataFormat": "wav",
+          "format": "adpcm",
+          "rate": 22050,
+          "sampleCount": 7113,
+          "md5ext": "53a3c2e27d1fb5fdb14aaf0cb41e7889.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 2,
+      "visible": true,
+      "x": -200,
+      "y": 0,
+      "size": 100,
+      "direction": 180,
+      "draggable": false,
+      "rotationStyle": "all around"
+    },
+    {
+      "isStage": false,
+      "name": "Ball",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "#|*M`rk^*vZTHli+umhm": {
+          "opcode": "event_whenflagclicked",
+          "next": "~VCcWHlo(YaUKH[sES~|",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 48,
+          "y": 64
+        },
+        "~VCcWHlo(YaUKH[sES~|": {
+          "opcode": "motion_gotoxy",
+          "next": "1.iOUUl_6xl6gRWh7%(3",
+          "parent": "#|*M`rk^*vZTHli+umhm",
+          "inputs": { "X": [1, [4, "0"]], "Y": [1, [4, "0"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "1.iOUUl_6xl6gRWh7%(3": {
+          "opcode": "motion_turnright",
+          "next": "CT[WfrF,AQvjKwe|BO[!",
+          "parent": "~VCcWHlo(YaUKH[sES~|",
+          "inputs": { "DEGREES": [3, "]lN==1f1Di!M%i+iLV{t", [4, "90"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "]lN==1f1Di!M%i+iLV{t": {
+          "opcode": "operator_random",
+          "next": null,
+          "parent": "1.iOUUl_6xl6gRWh7%(3",
+          "inputs": { "FROM": [1, [4, "-90"]], "TO": [1, [4, "90"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "CT[WfrF,AQvjKwe|BO[!": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "1.iOUUl_6xl6gRWh7%(3",
+          "inputs": { "SUBSTACK": [2, ")@oF7OOh{A;h-%-1CGpd"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ")@oF7OOh{A;h-%-1CGpd": {
+          "opcode": "motion_movesteps",
+          "next": ")MZ0k3w!a]CQAC7o{UVM",
+          "parent": "CT[WfrF,AQvjKwe|BO[!",
+          "inputs": { "STEPS": [1, [4, "5"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ")MZ0k3w!a]CQAC7o{UVM": {
+          "opcode": "motion_ifonedgebounce",
+          "next": null,
+          "parent": ")@oF7OOh{A;h-%-1CGpd",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "k)e@y:])=zi#U?QR4R8N": {
+          "opcode": "event_whenflagclicked",
+          "next": "H9`kfIJCJz(kkl1aj0]D",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 531,
+          "y": 64
+        },
+        "H9`kfIJCJz(kkl1aj0]D": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "k)e@y:])=zi#U?QR4R8N",
+          "inputs": { "SUBSTACK": [2, "ry@}2|j),;ajW!./_z`^"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "ry@}2|j),;ajW!./_z`^": {
+          "opcode": "control_if",
+          "next": null,
+          "parent": "H9`kfIJCJz(kkl1aj0]D",
+          "inputs": {
+            "CONDITION": [2, "Ii1HIIEF~dFtOC(EsjQQ"],
+            "SUBSTACK": [2, "-wm:hK~ps!^/G[Yp2eMz"]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Ii1HIIEF~dFtOC(EsjQQ": {
+          "opcode": "sensing_touchingcolor",
+          "next": null,
+          "parent": "ry@}2|j),;ajW!./_z`^",
+          "inputs": { "COLOR": [1, [9, "#00c040"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "-wm:hK~ps!^/G[Yp2eMz": {
+          "opcode": "motion_turnright",
+          "next": null,
+          "parent": "ry@}2|j),;ajW!./_z`^",
+          "inputs": { "DEGREES": [1, [4, "180"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "ball-a",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "3c6241985b581284ec191f9d1deffde8",
+          "md5ext": "3c6241985b581284ec191f9d1deffde8.svg",
+          "rotationCenterX": 22,
+          "rotationCenterY": 22
+        },
+        {
+          "name": "ball-b",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "ad7dc51cafd73e8279073e33b0eab335",
+          "md5ext": "ad7dc51cafd73e8279073e33b0eab335.svg",
+          "rotationCenterX": 22,
+          "rotationCenterY": 22
+        },
+        {
+          "name": "ball-c",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "f221a2edf87aff3615c0c003e616b31b",
+          "md5ext": "f221a2edf87aff3615c0c003e616b31b.svg",
+          "rotationCenterX": 22,
+          "rotationCenterY": 22
+        },
+        {
+          "name": "ball-d",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "db144b2a19f4f1ab31e30d58f00447dc",
+          "md5ext": "db144b2a19f4f1ab31e30d58f00447dc.svg",
+          "rotationCenterX": 22,
+          "rotationCenterY": 22
+        },
+        {
+          "name": "ball-e",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "1c44b7494dec047371f74c705f1d99fc",
+          "md5ext": "1c44b7494dec047371f74c705f1d99fc.svg",
+          "rotationCenterX": 22,
+          "rotationCenterY": 22
+        },
+        {
+          "name": "Apple",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "3826a4091a33e4d26f87a2fac7cf796b",
+          "md5ext": "3826a4091a33e4d26f87a2fac7cf796b.svg",
+          "rotationCenterX": 31,
+          "rotationCenterY": 31
+        },
+        {
+          "name": "Basketball",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "9890d1248155abe3202b07bb98ab1504",
+          "md5ext": "9890d1248155abe3202b07bb98ab1504.svg",
+          "rotationCenterX": 23,
+          "rotationCenterY": 23
+        },
+        {
+          "name": "Baseball",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "e1d7a36e2f4be615ca1665aa27ba0740",
+          "md5ext": "e1d7a36e2f4be615ca1665aa27ba0740.svg",
+          "rotationCenterX": 28,
+          "rotationCenterY": 28
+        }
+      ],
+      "sounds": [
+        {
+          "name": "Boing",
+          "assetId": "53a3c2e27d1fb5fdb14aaf0cb41e7889",
+          "dataFormat": "wav",
+          "format": "adpcm",
+          "rate": 22050,
+          "sampleCount": 7113,
+          "md5ext": "53a3c2e27d1fb5fdb14aaf0cb41e7889.wav"
+        },
+        {
+          "name": "Pop",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 3,
+      "visible": true,
+      "x": -109.83546671028037,
+      "y": -136.0602346050358,
+      "size": 100,
+      "direction": 61.48398837619743,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [],
+  "extensions": [],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "1.0.5",
+    "agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+  }
+}

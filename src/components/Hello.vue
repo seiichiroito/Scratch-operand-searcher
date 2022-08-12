@@ -1,13 +1,18 @@
 <template>
   <div class="hello">
     <h2>単元表</h2>
-    <div>Selected: {{ selected }}</div>
-
-    <select v-model="selected">
-      <option value="A">A</option>
-      <option value="B">B</option>
-      <option value="C">C</option>
-    </select>
+    <p>
+      選択したゲーム:
+      <select v-model="selected">
+        <option
+          v-for="project in projects"
+          :value="project.name"
+          :key="project.name"
+        >
+          {{ project.name }}
+        </option>
+      </select>
+    </p>
     <ul>
       <li
         v-for="(opcode, index) in Object.entries(search_operators)"
@@ -20,16 +25,20 @@
 </template>
 
 <script setup>
-import project from "./json/project.json";
+// Game
+import projects from "./json/project";
+
 import search_operators from "./json/operators";
 import { ref } from "@vue/reactivity";
 import { computed } from "@vue/runtime-core";
 
 // Data
-const jsonData = ref(project);
-const selected = ref("B");
+const selected = ref(projects[0].name);
 
 // Mutation
+const jsonData = computed(() => {
+  return projects.find((project) => project.name == selected.value).game;
+});
 const opcodes = computed(() => {
   var blocks = jsonData.value.targets.map((sprite) => {
     return sprite.blocks;

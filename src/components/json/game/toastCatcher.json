@@ -1,0 +1,413 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "`jEk@4|i[#Fk?(8x)AV.-my variable": ["変数", 0],
+        "T#QWIiNR{6}oU$fj`$H9": ["じゅうりょく", -40]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "背景1",
+          "dataFormat": "svg",
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ポップ",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "videoState": "on",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "トースター",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "fbe5290f2964c266e0bbba434e735103",
+          "md5ext": "fbe5290f2964c266e0bbba434e735103.svg",
+          "rotationCenterX": 61.5,
+          "rotationCenterY": 32.69530499999999
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ポップ",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        },
+        {
+          "name": "ポップ2",
+          "assetId": "c93200fa93988c31b9e8ffa0f3e94009",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1031,
+          "md5ext": "c93200fa93988c31b9e8ffa0f3e94009.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 3,
+      "visible": true,
+      "x": -41.94117647058823,
+      "y": -79.58823529411765,
+      "size": 150,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    },
+    {
+      "isStage": false,
+      "name": "しょくパン",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "ny|#BSmVPMsk7F~cIt9W": {
+          "opcode": "event_whenflagclicked",
+          "next": "|V81nO0OVI,ij(PR+pCQ",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 152,
+          "y": 204
+        },
+        "|V81nO0OVI,ij(PR+pCQ": {
+          "opcode": "looks_setsizeto",
+          "next": "FP.C~nq;.|-L4{UUT`Fj",
+          "parent": "ny|#BSmVPMsk7F~cIt9W",
+          "inputs": { "SIZE": [1, [4, "200"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "f;Xd,c^cOYp~l)zYf(S0": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "u5J?-zh*EZ!!jY?3]jdX",
+          "inputs": { "SUBSTACK": [2, "K|C9CMuUV3@7rVC(/_eF"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "K|C9CMuUV3@7rVC(/_eF": {
+          "opcode": "motion_changeyby",
+          "next": null,
+          "parent": "f;Xd,c^cOYp~l)zYf(S0",
+          "inputs": {
+            "DY": [3, [12, "じゅうりょく", "T#QWIiNR{6}oU$fj`$H9"], [4, "10"]]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Z7B^bWHp0/-^`4#Uxy|m": {
+          "opcode": "event_whenflagclicked",
+          "next": "XcF*fFW5tKS_6!#4+eUp",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 131,
+          "y": 611
+        },
+        "u5J?-zh*EZ!!jY?3]jdX": {
+          "opcode": "data_setvariableto",
+          "next": "f;Xd,c^cOYp~l)zYf(S0",
+          "parent": "FP.C~nq;.|-L4{UUT`Fj",
+          "inputs": { "VALUE": [1, [10, "0"]] },
+          "fields": { "VARIABLE": ["じゅうりょく", "T#QWIiNR{6}oU$fj`$H9"] },
+          "shadow": false,
+          "topLevel": false
+        },
+        "XcF*fFW5tKS_6!#4+eUp": {
+          "opcode": "control_wait",
+          "next": "VGka*7A+7h3(O^wu3CtL",
+          "parent": "Z7B^bWHp0/-^`4#Uxy|m",
+          "inputs": { "DURATION": [3, "A/S-L9EgF8)Qt3yqSAAn", [5, "1"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "A/S-L9EgF8)Qt3yqSAAn": {
+          "opcode": "operator_random",
+          "next": null,
+          "parent": "XcF*fFW5tKS_6!#4+eUp",
+          "inputs": { "FROM": [1, [4, "1"]], "TO": [1, [4, "10"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "VGka*7A+7h3(O^wu3CtL": {
+          "opcode": "data_setvariableto",
+          "next": "#b_]?gcA,I-?t5OFk+LY",
+          "parent": "XcF*fFW5tKS_6!#4+eUp",
+          "inputs": { "VALUE": [1, [10, "60"]] },
+          "fields": { "VARIABLE": ["じゅうりょく", "T#QWIiNR{6}oU$fj`$H9"] },
+          "shadow": false,
+          "topLevel": false
+        },
+        "#b_]?gcA,I-?t5OFk+LY": {
+          "opcode": "control_repeat",
+          "next": null,
+          "parent": "VGka*7A+7h3(O^wu3CtL",
+          "inputs": {
+            "TIMES": [1, [6, "10"]],
+            "SUBSTACK": [2, "UOD%HDePWxY9`Hdo_||X"]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "UOD%HDePWxY9`Hdo_||X": {
+          "opcode": "data_changevariableby",
+          "next": null,
+          "parent": "#b_]?gcA,I-?t5OFk+LY",
+          "inputs": { "VALUE": [1, [4, "-10"]] },
+          "fields": { "VARIABLE": ["じゅうりょく", "T#QWIiNR{6}oU$fj`$H9"] },
+          "shadow": false,
+          "topLevel": false
+        },
+        "FP.C~nq;.|-L4{UUT`Fj": {
+          "opcode": "motion_gotoxy",
+          "next": "u5J?-zh*EZ!!jY?3]jdX",
+          "parent": "|V81nO0OVI,ij(PR+pCQ",
+          "inputs": { "X": [1, [4, "-39"]], "Y": [1, [4, "-91"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "7ce0c66769db8774115e43491cce2a77",
+          "md5ext": "7ce0c66769db8774115e43491cce2a77.svg",
+          "rotationCenterX": 32.18661499999999,
+          "rotationCenterY": 38.082899999999995
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ポップ3",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        },
+        {
+          "name": "Chomp",
+          "assetId": "3cf880d4b7fafea009d931a113446f1c",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 12679,
+          "md5ext": "3cf880d4b7fafea009d931a113446f1c.wav"
+        },
+        {
+          "name": "Bite",
+          "assetId": "1e2b690efe5da59877b3cc6abfd8f3c8",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 17288,
+          "md5ext": "1e2b690efe5da59877b3cc6abfd8f3c8.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 2,
+      "visible": true,
+      "x": -39,
+      "y": -255,
+      "size": 200,
+      "direction": 75,
+      "draggable": false,
+      "rotationStyle": "all around"
+    },
+    {
+      "isStage": false,
+      "name": "て",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "4yqSdY-ddYS1?qK!.yt)": {
+          "opcode": "event_whenflagclicked",
+          "next": "Sxl1g3Msyzc/pw;!Yi@l",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 136,
+          "y": 117
+        },
+        "Sxl1g3Msyzc/pw;!Yi@l": {
+          "opcode": "looks_setsizeto",
+          "next": "vysiUn=)*gS?7}w!i{R}",
+          "parent": "4yqSdY-ddYS1?qK!.yt)",
+          "inputs": { "SIZE": [1, [4, "70"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "B7)w]3^fKZR8p|yz8+KZ": {
+          "opcode": "event_whenkeypressed",
+          "next": "%.PG9eRP]=J/t,WaW}o/",
+          "parent": null,
+          "inputs": {},
+          "fields": { "KEY_OPTION": ["space", null] },
+          "shadow": false,
+          "topLevel": true,
+          "x": 102,
+          "y": 340
+        },
+        "%.PG9eRP]=J/t,WaW}o/": {
+          "opcode": "motion_changexby",
+          "next": "=0hS.XVXjKx^sQT6X);d",
+          "parent": "B7)w]3^fKZR8p|yz8+KZ",
+          "inputs": { "DX": [1, [4, "-100"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "=0hS.XVXjKx^sQT6X);d": {
+          "opcode": "control_if",
+          "next": null,
+          "parent": "%.PG9eRP]=J/t,WaW}o/",
+          "inputs": {
+            "CONDITION": [2, "}sQAr$|dy}B#5m[KMV*7"],
+            "SUBSTACK": [2, "jw=!bpeT)$*phn:e_XuP"]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "}sQAr$|dy}B#5m[KMV*7": {
+          "opcode": "sensing_touchingobject",
+          "next": null,
+          "parent": "=0hS.XVXjKx^sQT6X);d",
+          "inputs": { "TOUCHINGOBJECTMENU": [1, "H?5!Cy7HtdbiDM0NCE5R"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "H?5!Cy7HtdbiDM0NCE5R": {
+          "opcode": "sensing_touchingobjectmenu",
+          "next": null,
+          "parent": "}sQAr$|dy}B#5m[KMV*7",
+          "inputs": {},
+          "fields": { "TOUCHINGOBJECTMENU": ["しょくパン", null] },
+          "shadow": true,
+          "topLevel": false
+        },
+        "jw=!bpeT)$*phn:e_XuP": {
+          "opcode": "control_stop",
+          "next": null,
+          "parent": "=0hS.XVXjKx^sQT6X);d",
+          "inputs": {},
+          "fields": { "STOP_OPTION": ["all", null] },
+          "shadow": false,
+          "topLevel": false,
+          "mutation": {
+            "tagName": "mutation",
+            "children": [],
+            "hasnext": "false"
+          }
+        },
+        "vysiUn=)*gS?7}w!i{R}": {
+          "opcode": "motion_gotoxy",
+          "next": null,
+          "parent": "Sxl1g3Msyzc/pw;!Yi@l",
+          "inputs": { "X": [1, [4, "119"]], "Y": [1, [4, "5"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "cac910ecc5d58fd824d1cf4c492f1204",
+          "md5ext": "cac910ecc5d58fd824d1cf4c492f1204.svg",
+          "rotationCenterX": 105.23214285714283,
+          "rotationCenterY": 53.25
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ポップ",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 119,
+      "y": 5,
+      "size": 70,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [],
+  "extensions": [],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "1.0.5",
+    "agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+  }
+}
