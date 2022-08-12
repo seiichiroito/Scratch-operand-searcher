@@ -13,12 +13,25 @@
         </option>
       </select>
     </p>
+    <select v-model="visible">
+      <option value="all">全て表示</option>
+      <option value="only">存在する命令のみ表示</option>
+    </select>
     <ul>
       <li
         v-for="(opcode, index) in Object.entries(search_operators)"
         :key="opcode[1][0]"
       >
-        {{ opcode[0] }} : {{ opcode_numbers[index] }}
+        <span v-if="visible == 'all'">
+          {{ opcode[0] }} : {{ opcode_numbers[index] }}
+        </span>
+        <span v-else
+          >{{
+            opcode_numbers[index] > 0
+              ? opcode[0] + " : " + opcode_numbers[index]
+              : ""
+          }}
+        </span>
       </li>
     </ul>
   </div>
@@ -34,6 +47,7 @@ import { computed } from "@vue/runtime-core";
 
 // Data
 const selected = ref(projects[0].name);
+const visible = ref("all");
 
 // Mutation
 const jsonData = computed(() => {
