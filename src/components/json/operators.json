@@ -1,0 +1,88 @@
+{
+  "もし○○に触れたら": [
+    "sensing_touchingobject",
+    "sensing_touchingcolor",
+    "sensing_coloristouchingcolor"
+  ],
+  "もし○＝○なら": ["operator_equals", "string"],
+  "もし○<○なら、もしくは○=○なら": [
+    "operator_equals",
+    "integer",
+    "operator_gt",
+    "operator_lt"
+  ],
+  "○秒待つ": ["control_wait"],
+  "〜まで待つ": ["control_wait_until"],
+  "もし〜なら、でなければ△△": ["control_if_else"],
+  "ずっと": ["control_forever"],
+  "○回繰り返す": ["control_repeat"],
+  "○まで繰り返す": ["control_repeat_until"],
+  "10歩動かす": ["motion_movesteps"],
+  "X座標を○ 、y座標を○にする": ["motion_gotoxy"],
+  "1秒でx座標を○、y座標を○にする": ["motion_glidesecstoxy"],
+  "x座標を○ずつ変える。y座標を○ずつ変える": [
+    "motion_changexby",
+    "motion_changeyby"
+  ],
+  "大きさを○%にする": ["looks_setsizeto"],
+  "○○という, ○○と○秒いう": ["looks_say", "looks_sayforsecs"],
+  "コスチュームを○○にする": ["looks_switchcostumeto"],
+  "背景を○にする": ["looks_switchbackdropto"],
+  "表示する・隠す": ["looks_show", "looks_hide"],
+  "音を鳴らす, 最後まで音を鳴らす": ["sound_play", "sound_playuntildone"],
+  "前に出す、再背面へ移動する": [
+    "looks_gotofrontback",
+    "looks_goforwardbackwardlayers"
+  ],
+  "ペンを下ろす、スタンプ": ["pen_penDown", "pen_penUp", "pen_stamp"],
+  "回転方向を左右のみにする": ["motion_setrotationstyle"],
+  "○度回す": ["motion_turnright", "motion_turnleft"],
+  "○度に向ける": ["motion_pointindirection"],
+  "マウスポインターへ行く、向ける": ["motion_goto_menu", "motion_pointtowards"],
+  "マウスが押された、このスプライトがクリックされたなら": [
+    "sensing_mousedown",
+    "event_whenthisspriteclicked"
+  ],
+  "○キーが押された": ["sensing_keypressed"],
+  "○○と聞いて待つ": ["sensing_askandwait"],
+  "明るさ、音量・ビデオモーションなど": [
+    "looks_changeeffectby",
+    "looks_seteffectto",
+    "sensing_loudness",
+    "sound_volume",
+    "sound_setvolumeto",
+    "sound_changevolumeby",
+    "looks_cleargraphiceffects",
+    "videoSensing_whenMotionGreaterThan"
+  ],
+  "文字列メッセージ": ["broadcasts", "string"],
+  "数値メッセージ": ["broadcasts", "integer"],
+  "乱数": ["operator_random"],
+  "等号 =": ["operator_equals"],
+  "不等号 <, >": ["operator_lt", "operator_gt"],
+  "数値（変化量）": ["variables", "accelerate"],
+  "真偽": ["variables", "flag"],
+  "クラウド変数": ["variables", "cloud"],
+  "プライベート変数": ["variables", "private"],
+  "別スプライトの座標、向き、コスチューム": ["sensing_of"],
+  "現在の時間、ユーザー名等": [
+    "sensing_current",
+    "sensing_dayssince2000",
+    "sensing_username"
+  ],
+  "クローンされた時": ["control_start_as_clone"],
+  "リスト（パブリック）": ["lists", "public"],
+  "リスト（プライベート）": ["lists", "private"],
+  "ブロック定義（引数なし）": ["procedures_prototype", "input == 0"],
+  "ブロック定義（引数あり）": ["procedures_prototype", "input != 0"],
+  "ブロック定義（再描画なし）": ["procedures_prototype", "warp == true"],
+  "+, -, *, /": [
+    "operator_add",
+    "operator_subtract",
+    "operator_multiply",
+    "operator_divide"
+  ],
+  "割ったあまり": ["operator_mod"],
+  "かつ、または、でない": ["operator_and", "operator_or", "operator_not"],
+  "四捨五入、sin, cosなど": ["operator_round", "operator_mathop"]
+}
