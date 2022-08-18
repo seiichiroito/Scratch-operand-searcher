@@ -1,0 +1,710 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": { "`jEk@4|i[#Fk?(8x)AV.-my variable": ["my variable", 0] },
+      "lists": {},
+      "broadcasts": {
+        "}d`/+X[hJrt3Gc3I)[QW": "いちごボタンをおした",
+        "L-aP={$9B~fQqN:`v-jj": "チョコボタンをおした",
+        "35m{3v}L$A6+Ta,D-i{.": "バニラボタンをおした"
+      },
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "backdrop1",
+          "dataFormat": "svg",
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [
+        {
+          "name": "pop",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "videoState": "on",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "コーン",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 1,
+      "costumes": [
+        {
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "de13f972d006038d7c4d82652f360101",
+          "md5ext": "de13f972d006038d7c4d82652f360101.svg",
+          "rotationCenterX": 92.8828125,
+          "rotationCenterY": 126
+        },
+        {
+          "name": "コスチューム2",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "f2e489cb642e344e5e0d56a2a5b8cb72",
+          "md5ext": "f2e489cb642e344e5e0d56a2a5b8cb72.svg",
+          "rotationCenterX": 103.86328125,
+          "rotationCenterY": 134.45898437500003
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ポップ",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": -25.470588235294123,
+      "y": -71.64705882352942,
+      "size": 80,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    },
+    {
+      "isStage": false,
+      "name": "アイス",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "=BEIZuUPiV{p$y;K,gbh": {
+          "opcode": "event_whenflagclicked",
+          "next": "6n.Ns!J;W0}RKIeMUBVx",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 144,
+          "y": 237
+        },
+        "6n.Ns!J;W0}RKIeMUBVx": {
+          "opcode": "looks_setsizeto",
+          "next": null,
+          "parent": "=BEIZuUPiV{p$y;K,gbh",
+          "inputs": { "SIZE": [1, [4, "120"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Hc9?y!X|igb{Cj-NZA*c": {
+          "opcode": "event_whenbroadcastreceived",
+          "next": "Y^`!$5%joi,AkmjGq)^{",
+          "parent": null,
+          "inputs": {},
+          "fields": {
+            "BROADCAST_OPTION": ["いちごボタンをおした", "}d`/+X[hJrt3Gc3I)[QW"]
+          },
+          "shadow": false,
+          "topLevel": true,
+          "x": 93,
+          "y": 453
+        },
+        "Y^`!$5%joi,AkmjGq)^{": {
+          "opcode": "looks_switchcostumeto",
+          "next": null,
+          "parent": "Hc9?y!X|igb{Cj-NZA*c",
+          "inputs": { "COSTUME": [1, "2NPd/-j.QZKlB+T/c#WZ"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "2NPd/-j.QZKlB+T/c#WZ": {
+          "opcode": "looks_costume",
+          "next": null,
+          "parent": "Y^`!$5%joi,AkmjGq)^{",
+          "inputs": {},
+          "fields": { "COSTUME": ["いちご", null] },
+          "shadow": true,
+          "topLevel": false
+        },
+        "V;AJo{Jp+9?C#K_$/;WT": {
+          "opcode": "event_whenbroadcastreceived",
+          "next": "6CXQ:pl;;46[Ad;~mj.6",
+          "parent": null,
+          "inputs": {},
+          "fields": {
+            "BROADCAST_OPTION": ["チョコボタンをおした", "L-aP={$9B~fQqN:`v-jj"]
+          },
+          "shadow": false,
+          "topLevel": true,
+          "x": 102,
+          "y": 618
+        },
+        "6CXQ:pl;;46[Ad;~mj.6": {
+          "opcode": "looks_switchcostumeto",
+          "next": null,
+          "parent": "V;AJo{Jp+9?C#K_$/;WT",
+          "inputs": { "COSTUME": [1, "-il#,J}~ip)nkgy*R3py"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "-il#,J}~ip)nkgy*R3py": {
+          "opcode": "looks_costume",
+          "next": null,
+          "parent": "6CXQ:pl;;46[Ad;~mj.6",
+          "inputs": {},
+          "fields": { "COSTUME": ["チョコ", null] },
+          "shadow": true,
+          "topLevel": false
+        },
+        ")@*9}r%?6@9XUvFjs_oR": {
+          "opcode": "event_whenbroadcastreceived",
+          "next": "xSfS~VWIB.^dqyjIGA3t",
+          "parent": null,
+          "inputs": {},
+          "fields": {
+            "BROADCAST_OPTION": ["バニラボタンをおした", "35m{3v}L$A6+Ta,D-i{."]
+          },
+          "shadow": false,
+          "topLevel": true,
+          "x": 107,
+          "y": 776
+        },
+        "xSfS~VWIB.^dqyjIGA3t": {
+          "opcode": "looks_switchcostumeto",
+          "next": null,
+          "parent": ")@*9}r%?6@9XUvFjs_oR",
+          "inputs": { "COSTUME": [1, "QD[8Z#5/OHKjl/!#QxyY"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "QD[8Z#5/OHKjl/!#QxyY": {
+          "opcode": "looks_costume",
+          "next": null,
+          "parent": "xSfS~VWIB.^dqyjIGA3t",
+          "inputs": {},
+          "fields": { "COSTUME": ["バニラ", null] },
+          "shadow": true,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 2,
+      "costumes": [
+        {
+          "name": "いちご",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "9b2c37a96bc64b2e1107ec61c7d96d31",
+          "md5ext": "9b2c37a96bc64b2e1107ec61c7d96d31.svg",
+          "rotationCenterX": 84.25,
+          "rotationCenterY": 66.80468750000003
+        },
+        {
+          "name": "チョコ",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "2f31e7a493e13145b3f39639b7ae8c89",
+          "md5ext": "2f31e7a493e13145b3f39639b7ae8c89.svg",
+          "rotationCenterX": 84,
+          "rotationCenterY": 66.5546875
+        },
+        {
+          "name": "バニラ",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "e0d39d5f8dde2cf01c204bb14b9b441a",
+          "md5ext": "e0d39d5f8dde2cf01c204bb14b9b441a.svg",
+          "rotationCenterX": 84.25,
+          "rotationCenterY": 67.25
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ポップ",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 2,
+      "visible": true,
+      "x": -24.470588235294116,
+      "y": 52,
+      "size": 120,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    },
+    {
+      "isStage": false,
+      "name": "いちごボタン",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "z%;P`N14a5ieUp[w{]Ju": {
+          "opcode": "event_whenflagclicked",
+          "next": "?p{S3Wo-$5o[eq7?B`Ch",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 87,
+          "y": 199
+        },
+        "?p{S3Wo-$5o[eq7?B`Ch": {
+          "opcode": "looks_setsizeto",
+          "next": "4So/2=}V2N5mci!HRI=q",
+          "parent": "z%;P`N14a5ieUp[w{]Ju",
+          "inputs": { "SIZE": [1, [4, "100"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "4So/2=}V2N5mci!HRI=q": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "?p{S3Wo-$5o[eq7?B`Ch",
+          "inputs": { "SUBSTACK": [2, "Y,I{dzI*IT5c7j0FrfB^"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "}5?oio12*.0#qa4~:$3*": {
+          "opcode": "sensing_touchingobject",
+          "next": null,
+          "parent": "Y,I{dzI*IT5c7j0FrfB^",
+          "inputs": { "TOUCHINGOBJECTMENU": [1, "ApXUnad@#,XYO3*!W9h*"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "ApXUnad@#,XYO3*!W9h*": {
+          "opcode": "sensing_touchingobjectmenu",
+          "next": null,
+          "parent": "}5?oio12*.0#qa4~:$3*",
+          "inputs": {},
+          "fields": { "TOUCHINGOBJECTMENU": ["_mouse_", null] },
+          "shadow": true,
+          "topLevel": false
+        },
+        "-ZQqfhkR;7f,V=$)WYxE": {
+          "opcode": "looks_seteffectto",
+          "next": null,
+          "parent": "Y,I{dzI*IT5c7j0FrfB^",
+          "inputs": { "VALUE": [1, [4, "0"]] },
+          "fields": { "EFFECT": ["BRIGHTNESS", null] },
+          "shadow": false,
+          "topLevel": false
+        },
+        "kFXT!gK=QY?=S@Z?V*9/": {
+          "opcode": "looks_seteffectto",
+          "next": null,
+          "parent": "Y,I{dzI*IT5c7j0FrfB^",
+          "inputs": { "VALUE": [1, [4, "-40"]] },
+          "fields": { "EFFECT": ["BRIGHTNESS", null] },
+          "shadow": false,
+          "topLevel": false
+        },
+        "Y,I{dzI*IT5c7j0FrfB^": {
+          "opcode": "control_if_else",
+          "next": null,
+          "parent": "4So/2=}V2N5mci!HRI=q",
+          "inputs": {
+            "CONDITION": [2, "}5?oio12*.0#qa4~:$3*"],
+            "SUBSTACK": [2, "kFXT!gK=QY?=S@Z?V*9/"],
+            "SUBSTACK2": [2, "-ZQqfhkR;7f,V=$)WYxE"]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "PJl:Rox(q(9WBhE(fJfM": {
+          "opcode": "event_whenthisspriteclicked",
+          "next": "fnl0f|g[Dk./?USO1Wc?",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 94,
+          "y": 769
+        },
+        "fnl0f|g[Dk./?USO1Wc?": {
+          "opcode": "event_broadcast",
+          "next": null,
+          "parent": "PJl:Rox(q(9WBhE(fJfM",
+          "inputs": {
+            "BROADCAST_INPUT": [
+              1,
+              [11, "いちごボタンをおした", "}d`/+X[hJrt3Gc3I)[QW"]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "cb53484c5ab607f2daa077c08ac525d4",
+          "md5ext": "cb53484c5ab607f2daa077c08ac525d4.svg",
+          "rotationCenterX": 26.30859375,
+          "rotationCenterY": 28
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ポップ",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 3,
+      "visible": true,
+      "x": 184.23529411764707,
+      "y": 84.47058823529412,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    },
+    {
+      "isStage": false,
+      "name": "チョコボタン",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        ";U0S|VW|6yDTwQwiI#k;": {
+          "opcode": "event_whenflagclicked",
+          "next": "DH?`kC.brSM0ZmZu)+tN",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 87,
+          "y": 199
+        },
+        "DH?`kC.brSM0ZmZu)+tN": {
+          "opcode": "looks_setsizeto",
+          "next": "QN_R0]p%gTTbXsiI~e]}",
+          "parent": ";U0S|VW|6yDTwQwiI#k;",
+          "inputs": { "SIZE": [1, [4, "100"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "QN_R0]p%gTTbXsiI~e]}": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "DH?`kC.brSM0ZmZu)+tN",
+          "inputs": { "SUBSTACK": [2, "3-a8_,h?`a-(;2e;po%c"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "3-a8_,h?`a-(;2e;po%c": {
+          "opcode": "control_if_else",
+          "next": null,
+          "parent": "QN_R0]p%gTTbXsiI~e]}",
+          "inputs": {
+            "CONDITION": [2, "W9hX#2g#P[:-ygs|l30)"],
+            "SUBSTACK": [2, "pHCF~{U|@]xO.@.,s4_b"],
+            "SUBSTACK2": [2, "IUM4n.bNiG-!tFNqkWog"]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "W9hX#2g#P[:-ygs|l30)": {
+          "opcode": "sensing_touchingobject",
+          "next": null,
+          "parent": "3-a8_,h?`a-(;2e;po%c",
+          "inputs": { "TOUCHINGOBJECTMENU": [1, ";1Cv7t(6oSsnm}f36no."] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ";1Cv7t(6oSsnm}f36no.": {
+          "opcode": "sensing_touchingobjectmenu",
+          "next": null,
+          "parent": "W9hX#2g#P[:-ygs|l30)",
+          "inputs": {},
+          "fields": { "TOUCHINGOBJECTMENU": ["_mouse_", null] },
+          "shadow": true,
+          "topLevel": false
+        },
+        "pHCF~{U|@]xO.@.,s4_b": {
+          "opcode": "looks_seteffectto",
+          "next": null,
+          "parent": "3-a8_,h?`a-(;2e;po%c",
+          "inputs": { "VALUE": [1, [4, "-40"]] },
+          "fields": { "EFFECT": ["BRIGHTNESS", null] },
+          "shadow": false,
+          "topLevel": false
+        },
+        "IUM4n.bNiG-!tFNqkWog": {
+          "opcode": "looks_seteffectto",
+          "next": null,
+          "parent": "3-a8_,h?`a-(;2e;po%c",
+          "inputs": { "VALUE": [1, [4, "0"]] },
+          "fields": { "EFFECT": ["BRIGHTNESS", null] },
+          "shadow": false,
+          "topLevel": false
+        },
+        "C:X0nuxex),}M0vxS:0r": {
+          "opcode": "event_whenthisspriteclicked",
+          "next": "AAQk{y*rd?box^SWB#Ia",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 94,
+          "y": 769
+        },
+        "AAQk{y*rd?box^SWB#Ia": {
+          "opcode": "event_broadcast",
+          "next": null,
+          "parent": "C:X0nuxex),}M0vxS:0r",
+          "inputs": {
+            "BROADCAST_INPUT": [
+              1,
+              [11, "チョコボタンをおした", "L-aP={$9B~fQqN:`v-jj"]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "5f2c1c5b84261c7dad7240c379016f8a",
+          "md5ext": "5f2c1c5b84261c7dad7240c379016f8a.svg",
+          "rotationCenterX": 26.5,
+          "rotationCenterY": 27.80859374999997
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ポップ",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 4,
+      "visible": true,
+      "x": 185.20880627015362,
+      "y": 1.2473198994933599,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    },
+    {
+      "isStage": false,
+      "name": "いちごボタン3",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "Iz1#t)]k.6kh|LdDr1(H": {
+          "opcode": "event_whenflagclicked",
+          "next": "DaoMc4NrGOS?ZP|gCcmL",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 87,
+          "y": 199
+        },
+        "DaoMc4NrGOS?ZP|gCcmL": {
+          "opcode": "looks_setsizeto",
+          "next": "n?ebs;iRf-*:5,+MQ?2,",
+          "parent": "Iz1#t)]k.6kh|LdDr1(H",
+          "inputs": { "SIZE": [1, [4, "100"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "n?ebs;iRf-*:5,+MQ?2,": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "DaoMc4NrGOS?ZP|gCcmL",
+          "inputs": { "SUBSTACK": [2, "Wq}9[.e}jTKIZyIHJYp%"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Wq}9[.e}jTKIZyIHJYp%": {
+          "opcode": "control_if_else",
+          "next": null,
+          "parent": "n?ebs;iRf-*:5,+MQ?2,",
+          "inputs": {
+            "CONDITION": [2, "#V,*,)a*.XDMVuD+u`0B"],
+            "SUBSTACK": [2, "pB.d^Gx}OJ7NmQDzhmW9"],
+            "SUBSTACK2": [2, "]#Vcc|iOn(t-j?y~)b:N"]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "#V,*,)a*.XDMVuD+u`0B": {
+          "opcode": "sensing_touchingobject",
+          "next": null,
+          "parent": "Wq}9[.e}jTKIZyIHJYp%",
+          "inputs": { "TOUCHINGOBJECTMENU": [1, "ch(,4hn1qEQJ*gM4OhOA"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "ch(,4hn1qEQJ*gM4OhOA": {
+          "opcode": "sensing_touchingobjectmenu",
+          "next": null,
+          "parent": "#V,*,)a*.XDMVuD+u`0B",
+          "inputs": {},
+          "fields": { "TOUCHINGOBJECTMENU": ["_mouse_", null] },
+          "shadow": true,
+          "topLevel": false
+        },
+        "pB.d^Gx}OJ7NmQDzhmW9": {
+          "opcode": "looks_seteffectto",
+          "next": null,
+          "parent": "Wq}9[.e}jTKIZyIHJYp%",
+          "inputs": { "VALUE": [1, [4, "-40"]] },
+          "fields": { "EFFECT": ["BRIGHTNESS", null] },
+          "shadow": false,
+          "topLevel": false
+        },
+        "]#Vcc|iOn(t-j?y~)b:N": {
+          "opcode": "looks_seteffectto",
+          "next": null,
+          "parent": "Wq}9[.e}jTKIZyIHJYp%",
+          "inputs": { "VALUE": [1, [4, "0"]] },
+          "fields": { "EFFECT": ["BRIGHTNESS", null] },
+          "shadow": false,
+          "topLevel": false
+        },
+        "uVP8Q%x~7HV7%,ob4.T3": {
+          "opcode": "event_whenthisspriteclicked",
+          "next": "1i`c`~1a.mI+RwHBC%(W",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 94,
+          "y": 769
+        },
+        "1i`c`~1a.mI+RwHBC%(W": {
+          "opcode": "event_broadcast",
+          "next": null,
+          "parent": "uVP8Q%x~7HV7%,ob4.T3",
+          "inputs": {
+            "BROADCAST_INPUT": [
+              1,
+              [11, "バニラボタンをおした", "35m{3v}L$A6+Ta,D-i{."]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "c2c63fa99671310516b6518405ee3dc5",
+          "md5ext": "c2c63fa99671310516b6518405ee3dc5.svg",
+          "rotationCenterX": 26.5,
+          "rotationCenterY": 28
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ポップ",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 5,
+      "visible": true,
+      "x": 185.2909045985008,
+      "y": -81.7492877825206,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [],
+  "extensions": [],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "1.0.5",
+    "agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+  }
+}

@@ -1,0 +1,639 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": { "`jEk@4|i[#Fk?(8x)AV.-my variable": ["変数", 0] },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "背景1",
+          "dataFormat": "svg",
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ポップ",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "videoState": "on",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "スプライト1",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "K:8YZnUM7ufVoE.EaYNM": {
+          "opcode": "event_whenkeypressed",
+          "next": "ukuUf9@L3:;dHgV30E)e",
+          "parent": null,
+          "inputs": {},
+          "fields": { "KEY_OPTION": ["z", null] },
+          "shadow": false,
+          "topLevel": true,
+          "x": 0,
+          "y": 0
+        },
+        "ukuUf9@L3:;dHgV30E)e": {
+          "opcode": "sound_playuntildone",
+          "next": null,
+          "parent": "K:8YZnUM7ufVoE.EaYNM",
+          "inputs": { "SOUND_MENU": [1, "~~9tA~4PRw0q0/-1_N{T"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "~~9tA~4PRw0q0/-1_N{T": {
+          "opcode": "sound_sounds_menu",
+          "next": null,
+          "parent": "ukuUf9@L3:;dHgV30E)e",
+          "inputs": {},
+          "fields": { "SOUND_MENU": ["recording1", null] },
+          "shadow": true,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "bcf454acf82e4504149f7ffe07081dbc",
+          "md5ext": "bcf454acf82e4504149f7ffe07081dbc.svg",
+          "rotationCenterX": 48,
+          "rotationCenterY": 50
+        },
+        {
+          "name": "コスチューム2",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "0fb9be3e8397c983338cb71dc84d0b25",
+          "md5ext": "0fb9be3e8397c983338cb71dc84d0b25.svg",
+          "rotationCenterX": 46,
+          "rotationCenterY": 53
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ニャー",
+          "assetId": "83c36d806dc92327b9e7049a565c6bff",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 37376,
+          "md5ext": "83c36d806dc92327b9e7049a565c6bff.wav"
+        },
+        {
+          "name": "recording1",
+          "assetId": "9a24ee9c0b101bb5304c48913f82973f",
+          "dataFormat": "wav",
+          "rate": 44100,
+          "sampleCount": 45158,
+          "md5ext": "9a24ee9c0b101bb5304c48913f82973f.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 2,
+      "visible": true,
+      "x": -155,
+      "y": -13,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    },
+    {
+      "isStage": false,
+      "name": "Drums Conga",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "lns[qp^_?c6;$Vk]Pt]D": {
+          "opcode": "event_whenkeypressed",
+          "next": "A%.85A[o_FOwa%YckL)l",
+          "parent": null,
+          "inputs": {},
+          "fields": { "KEY_OPTION": ["right arrow", null] },
+          "shadow": false,
+          "topLevel": true,
+          "x": 65,
+          "y": 334
+        },
+        "A%.85A[o_FOwa%YckL)l": {
+          "opcode": "sound_play",
+          "next": "7?aTU5r4XXY`=3i};4Sb",
+          "parent": "lns[qp^_?c6;$Vk]Pt]D",
+          "inputs": { "SOUND_MENU": [1, "Ol3CRIyp-i;x8gjO=`PV"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Ol3CRIyp-i;x8gjO=`PV": {
+          "opcode": "sound_sounds_menu",
+          "next": null,
+          "parent": "A%.85A[o_FOwa%YckL)l",
+          "inputs": {},
+          "fields": { "SOUND_MENU": ["High Conga", null] },
+          "shadow": true,
+          "topLevel": false
+        },
+        "7?aTU5r4XXY`=3i};4Sb": {
+          "opcode": "looks_switchcostumeto",
+          "next": "||(0;SLPAN^6A7A)5O;j",
+          "parent": "A%.85A[o_FOwa%YckL)l",
+          "inputs": { "COSTUME": [1, "Wwh_r^jyZZmT/`o@mgF~"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Wwh_r^jyZZmT/`o@mgF~": {
+          "opcode": "looks_costume",
+          "next": null,
+          "parent": "7?aTU5r4XXY`=3i};4Sb",
+          "inputs": {},
+          "fields": { "COSTUME": ["ひかったたいこ", null] },
+          "shadow": true,
+          "topLevel": false
+        },
+        "||(0;SLPAN^6A7A)5O;j": {
+          "opcode": "control_wait",
+          "next": "T,;mPQ6hs=[n9)FQ14T2",
+          "parent": "7?aTU5r4XXY`=3i};4Sb",
+          "inputs": { "DURATION": [1, [5, "0.1"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "T,;mPQ6hs=[n9)FQ14T2": {
+          "opcode": "looks_switchcostumeto",
+          "next": null,
+          "parent": "||(0;SLPAN^6A7A)5O;j",
+          "inputs": { "COSTUME": [1, "THR{Jc^-..6G2W%Ne,(K"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "THR{Jc^-..6G2W%Ne,(K": {
+          "opcode": "looks_costume",
+          "next": null,
+          "parent": "T,;mPQ6hs=[n9)FQ14T2",
+          "inputs": {},
+          "fields": { "COSTUME": ["ふつうのたいこ", null] },
+          "shadow": true,
+          "topLevel": false
+        },
+        "K}UXZaMF`x3f,r3HT2Hi": {
+          "opcode": "event_whenkeypressed",
+          "next": "+@EQ}`UU^OSDrH2|EBNF",
+          "parent": null,
+          "inputs": {},
+          "fields": { "KEY_OPTION": ["left arrow", null] },
+          "shadow": false,
+          "topLevel": true,
+          "x": 74,
+          "y": 719
+        },
+        "y8[^/pbuR?NCK}EJo;@,": {
+          "opcode": "event_whenkeypressed",
+          "next": "huNNmWBz@GiQ6192@9!E",
+          "parent": null,
+          "inputs": {},
+          "fields": { "KEY_OPTION": ["space", null] },
+          "shadow": false,
+          "topLevel": true,
+          "x": 80,
+          "y": 1093
+        },
+        "huNNmWBz@GiQ6192@9!E": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "y8[^/pbuR?NCK}EJo;@,",
+          "inputs": { "SUBSTACK": [2, "MN,?vlTf*]=vUmMY6#`W"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "MN,?vlTf*]=vUmMY6#`W": {
+          "opcode": "sound_playuntildone",
+          "next": null,
+          "parent": "huNNmWBz@GiQ6192@9!E",
+          "inputs": { "SOUND_MENU": [1, "%a#il2QSrwyo?U5wzAK,"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "%a#il2QSrwyo?U5wzAK,": {
+          "opcode": "sound_sounds_menu",
+          "next": null,
+          "parent": "MN,?vlTf*]=vUmMY6#`W",
+          "inputs": {},
+          "fields": { "SOUND_MENU": ["Chill", null] },
+          "shadow": true,
+          "topLevel": false
+        },
+        "+@EQ}`UU^OSDrH2|EBNF": {
+          "opcode": "sound_play",
+          "next": "k:lK1g0qKgO^{5WWA!4m",
+          "parent": "K}UXZaMF`x3f,r3HT2Hi",
+          "inputs": { "SOUND_MENU": [1, "2|r|Z=D2(@rQsy/x4}o)"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "2|r|Z=D2(@rQsy/x4}o)": {
+          "opcode": "sound_sounds_menu",
+          "next": null,
+          "parent": "+@EQ}`UU^OSDrH2|EBNF",
+          "inputs": {},
+          "fields": { "SOUND_MENU": ["Low Conga", null] },
+          "shadow": true,
+          "topLevel": false
+        },
+        "k:lK1g0qKgO^{5WWA!4m": {
+          "opcode": "looks_switchcostumeto",
+          "next": "%d8?OZYT65(!W@Jtw6hN",
+          "parent": "+@EQ}`UU^OSDrH2|EBNF",
+          "inputs": { "COSTUME": [1, ";1|obQ45J;w5qhntNVFd"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ";1|obQ45J;w5qhntNVFd": {
+          "opcode": "looks_costume",
+          "next": null,
+          "parent": "k:lK1g0qKgO^{5WWA!4m",
+          "inputs": {},
+          "fields": { "COSTUME": ["ひかったたいこ", null] },
+          "shadow": true,
+          "topLevel": false
+        },
+        "%d8?OZYT65(!W@Jtw6hN": {
+          "opcode": "control_wait",
+          "next": "Z5,_xiy3Bct-6/L*(hjX",
+          "parent": "k:lK1g0qKgO^{5WWA!4m",
+          "inputs": { "DURATION": [1, [5, "0.1"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Z5,_xiy3Bct-6/L*(hjX": {
+          "opcode": "looks_switchcostumeto",
+          "next": null,
+          "parent": "%d8?OZYT65(!W@Jtw6hN",
+          "inputs": { "COSTUME": [1, "29F(c:0woX1ggu@mcCZh"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "29F(c:0woX1ggu@mcCZh": {
+          "opcode": "looks_costume",
+          "next": null,
+          "parent": "Z5,_xiy3Bct-6/L*(hjX",
+          "inputs": {},
+          "fields": { "COSTUME": ["ふつうのたいこ", null] },
+          "shadow": true,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "ふつうのたいこ",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "2b2eacfce0fb1af023e6ca0f5ef6defe",
+          "md5ext": "2b2eacfce0fb1af023e6ca0f5ef6defe.svg",
+          "rotationCenterX": 65,
+          "rotationCenterY": 66
+        },
+        {
+          "name": "ひかったたいこ",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "bdad2f140cfbd021f38241fc9acc7fd2",
+          "md5ext": "bdad2f140cfbd021f38241fc9acc7fd2.svg",
+          "rotationCenterX": 66,
+          "rotationCenterY": 94
+        }
+      ],
+      "sounds": [
+        {
+          "name": "High Conga",
+          "assetId": "16144544de90e98a92a265d4fc3241ea",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 16384,
+          "md5ext": "16144544de90e98a92a265d4fc3241ea.wav"
+        },
+        {
+          "name": "Low Conga",
+          "assetId": "0b6f94487cd8a1cf0bb77e15966656c3",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 16768,
+          "md5ext": "0b6f94487cd8a1cf0bb77e15966656c3.wav"
+        },
+        {
+          "name": "Muted Conga",
+          "assetId": "1d4abbe3c9bfe198a88badb10762de75",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 9088,
+          "md5ext": "1d4abbe3c9bfe198a88badb10762de75.wav"
+        },
+        {
+          "name": "Tap Conga",
+          "assetId": "fd9a67157f57f9cc6fe3cdce38a6d4a8",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 13760,
+          "md5ext": "fd9a67157f57f9cc6fe3cdce38a6d4a8.wav"
+        },
+        {
+          "name": "Chill",
+          "assetId": "c4e9e84fd9244ca43986c2bdb6669ae8",
+          "dataFormat": "wav",
+          "rate": 44100,
+          "sampleCount": 352800,
+          "md5ext": "c4e9e84fd9244ca43986c2bdb6669ae8.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 3,
+      "visible": true,
+      "x": -62.94117647058823,
+      "y": -101.05882352941178,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    },
+    {
+      "isStage": false,
+      "name": "Speaker",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "m8K:k9N}VWSZp+D63:ex": {
+          "opcode": "event_whenkeypressed",
+          "next": "w04EK4[7VfGls%Ra0|fa",
+          "parent": null,
+          "inputs": {},
+          "fields": { "KEY_OPTION": ["1", null] },
+          "shadow": false,
+          "topLevel": true,
+          "x": 167,
+          "y": 218
+        },
+        "DDSB]JLWs|#v%${9f$ma": {
+          "opcode": "music_playNoteForBeats",
+          "next": "#ma3}FA)$1RX?k,%pSE=",
+          "parent": "w04EK4[7VfGls%Ra0|fa",
+          "inputs": {
+            "NOTE": [1, "t)/a0mWo}#1y4tN#5+|O"],
+            "BEATS": [1, [4, "0.25"]]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "t)/a0mWo}#1y4tN#5+|O": {
+          "opcode": "note",
+          "next": null,
+          "parent": "DDSB]JLWs|#v%${9f$ma",
+          "inputs": {},
+          "fields": { "NOTE": ["69", null] },
+          "shadow": true,
+          "topLevel": false
+        },
+        "#ma3}FA)$1RX?k,%pSE=": {
+          "opcode": "music_playNoteForBeats",
+          "next": null,
+          "parent": "DDSB]JLWs|#v%${9f$ma",
+          "inputs": {
+            "NOTE": [1, "`AQEO[d$.qDi|.B(]J=]"],
+            "BEATS": [1, [4, "0.25"]]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "`AQEO[d$.qDi|.B(]J=]": {
+          "opcode": "note",
+          "next": null,
+          "parent": "#ma3}FA)$1RX?k,%pSE=",
+          "inputs": {},
+          "fields": { "NOTE": ["65", null] },
+          "shadow": true,
+          "topLevel": false
+        },
+        "w04EK4[7VfGls%Ra0|fa": {
+          "opcode": "music_setInstrument",
+          "next": "DDSB]JLWs|#v%${9f$ma",
+          "parent": "m8K:k9N}VWSZp+D63:ex",
+          "inputs": { "INSTRUMENT": [1, "*aF{@[Dyu6Rxr,h6]!#,"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "*aF{@[Dyu6Rxr,h6]!#,": {
+          "opcode": "music_menu_INSTRUMENT",
+          "next": null,
+          "parent": "w04EK4[7VfGls%Ra0|fa",
+          "inputs": {},
+          "fields": { "INSTRUMENT": ["3", null] },
+          "shadow": true,
+          "topLevel": false
+        },
+        "K(q{qGEB:fI|SOFUx,$Z": {
+          "opcode": "event_whenkeypressed",
+          "next": "8x`LVW/ptH~TG256_q3p",
+          "parent": null,
+          "inputs": {},
+          "fields": { "KEY_OPTION": ["up arrow", null] },
+          "shadow": false,
+          "topLevel": true,
+          "x": 133,
+          "y": 562
+        },
+        "8x`LVW/ptH~TG256_q3p": {
+          "opcode": "music_playDrumForBeats",
+          "next": null,
+          "parent": "K(q{qGEB:fI|SOFUx,$Z",
+          "inputs": {
+            "DRUM": [1, "A;Kb=eQ5$IBh#R8XbgSY"],
+            "BEATS": [1, [4, "0.25"]]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "A;Kb=eQ5$IBh#R8XbgSY": {
+          "opcode": "music_menu_DRUM",
+          "next": null,
+          "parent": "8x`LVW/ptH~TG256_q3p",
+          "inputs": {},
+          "fields": { "DRUM": ["1", null] },
+          "shadow": true,
+          "topLevel": false
+        },
+        "bqE/83T{?d2+cz[I[tgX": {
+          "opcode": "event_whenkeypressed",
+          "next": "d?@;rq_i:1]Jet$YH]Zh",
+          "parent": null,
+          "inputs": {},
+          "fields": { "KEY_OPTION": ["up arrow", null] },
+          "shadow": false,
+          "topLevel": true,
+          "x": 171,
+          "y": 773
+        },
+        "d?@;rq_i:1]Jet$YH]Zh": {
+          "opcode": "music_playDrumForBeats",
+          "next": null,
+          "parent": "bqE/83T{?d2+cz[I[tgX",
+          "inputs": {
+            "DRUM": [1, "S~Uj{_xcM2A6.8P;Ts84"],
+            "BEATS": [1, [4, "0.25"]]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "S~Uj{_xcM2A6.8P;Ts84": {
+          "opcode": "music_menu_DRUM",
+          "next": null,
+          "parent": "d?@;rq_i:1]Jet$YH]Zh",
+          "inputs": {},
+          "fields": { "DRUM": ["2", null] },
+          "shadow": true,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "speaker",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "697f6becae5321f77990636564ef0c97",
+          "md5ext": "697f6becae5321f77990636564ef0c97.svg",
+          "rotationCenterX": 53,
+          "rotationCenterY": 79
+        }
+      ],
+      "sounds": [
+        {
+          "name": "Drive Around",
+          "assetId": "a3a85fb8564b0266f50a9c091087b7aa",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 88192,
+          "md5ext": "a3a85fb8564b0266f50a9c091087b7aa.wav"
+        },
+        {
+          "name": "Scratchy Beat",
+          "assetId": "289dc558e076971e74dd1a0bd55719b1",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 88192,
+          "md5ext": "289dc558e076971e74dd1a0bd55719b1.wav"
+        },
+        {
+          "name": "Drum Jam",
+          "assetId": "8b5486ccc806e97e83049d25b071f7e4",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 88576,
+          "md5ext": "8b5486ccc806e97e83049d25b071f7e4.wav"
+        },
+        {
+          "name": "Cymbal Echo",
+          "assetId": "bb243badd1201b2607bf2513df10cd97",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 88652,
+          "md5ext": "bb243badd1201b2607bf2513df10cd97.wav"
+        },
+        {
+          "name": "Drum Satellite",
+          "assetId": "079067d7909f791b29f8be1c00fc2131",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 88192,
+          "md5ext": "079067d7909f791b29f8be1c00fc2131.wav"
+        },
+        {
+          "name": "Kick Back",
+          "assetId": "9cd340d9d568b1479f731e69e103b3ce",
+          "dataFormat": "wav",
+          "format": "adpcm",
+          "rate": 22050,
+          "sampleCount": 44705,
+          "md5ext": "9cd340d9d568b1479f731e69e103b3ce.wav"
+        },
+        {
+          "name": "Drum Funky",
+          "assetId": "fb56022366d21b299cbc3fd5e16000c2",
+          "dataFormat": "wav",
+          "format": "adpcm",
+          "rate": 22050,
+          "sampleCount": 44705,
+          "md5ext": "fb56022366d21b299cbc3fd5e16000c2.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 160.47058823529414,
+      "y": -33.64705882352942,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [],
+  "extensions": ["music"],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "1.0.5",
+    "agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+  }
+}
