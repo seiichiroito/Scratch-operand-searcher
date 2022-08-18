@@ -5,9 +5,8 @@
       "name": "Stage",
       "variables": {
         "`jEk@4|i[#Fk?(8x)AV.-my variable": ["変数", 0],
-        "mR#5[r2Ks,9$4ow;!W*;": ["連続正解数", "0"],
-        "nsJluRtrcp1WkWC%RzXu": ["数1", 86],
-        "`Z#7:-D6v)wtOs_{%N%Z": ["数2", 54]
+        "nsJluRtrcp1WkWC%RzXu": ["数1", 23],
+        "`Z#7:-D6v)wtOs_{%N%Z": ["数2", 29]
       },
       "lists": {},
       "broadcasts": {},
@@ -107,7 +106,7 @@
       "blocks": {
         "UnMuCq1sV;D+sFgs-[qr": {
           "opcode": "event_whenflagclicked",
-          "next": "0qtBg2;M[n|enEfNVlxl",
+          "next": "f8{H*NK:P8WK~E(Jab;R",
           "parent": null,
           "inputs": {},
           "fields": {},
@@ -116,19 +115,10 @@
           "x": 227,
           "y": 2748
         },
-        "0qtBg2;M[n|enEfNVlxl": {
-          "opcode": "data_setvariableto",
-          "next": "f8{H*NK:P8WK~E(Jab;R",
-          "parent": "UnMuCq1sV;D+sFgs-[qr",
-          "inputs": { "VALUE": [1, [10, "0"]] },
-          "fields": { "VARIABLE": ["連続正解数", "mR#5[r2Ks,9$4ow;!W*;"] },
-          "shadow": false,
-          "topLevel": false
-        },
         "f8{H*NK:P8WK~E(Jab;R": {
           "opcode": "control_forever",
           "next": null,
-          "parent": "0qtBg2;M[n|enEfNVlxl",
+          "parent": "UnMuCq1sV;D+sFgs-[qr",
           "inputs": { "SUBSTACK": [2, "CL)3u`||5NqUPG,oOZZ|"] },
           "fields": {},
           "shadow": false,
@@ -282,7 +272,7 @@
         },
         "WF2SU.Ld;dsZ.sm)g2U}": {
           "opcode": "sound_play",
-          "next": "78)!pb)OpK+:vXt%rAnw",
+          "next": null,
           "parent": "X_sNbXW*I:]E61jL372a",
           "inputs": { "SOUND_MENU": [1, "4A[uW$ES#C_j:~8pV*o#"] },
           "fields": {},
@@ -298,15 +288,6 @@
           "shadow": true,
           "topLevel": false
         },
-        "78)!pb)OpK+:vXt%rAnw": {
-          "opcode": "data_changevariableby",
-          "next": null,
-          "parent": "WF2SU.Ld;dsZ.sm)g2U}",
-          "inputs": { "VALUE": [1, [4, "1"]] },
-          "fields": { "VARIABLE": ["連続正解数", "mR#5[r2Ks,9$4ow;!W*;"] },
-          "shadow": false,
-          "topLevel": false
-        },
         ";6)L)|c|)kv6jKm|az1c": {
           "opcode": "looks_say",
           "next": "3YRx#oY+p]4xCVVJ1M@K",
@@ -318,7 +299,7 @@
         },
         "3YRx#oY+p]4xCVVJ1M@K": {
           "opcode": "sound_play",
-          "next": "q}R:$11r]k;~w_`zJZ3i",
+          "next": null,
           "parent": ";6)L)|c|)kv6jKm|az1c",
           "inputs": { "SOUND_MENU": [1, "(l=}:V*KZ!)%KrTy:Jq;"] },
           "fields": {},
@@ -332,15 +313,6 @@
           "inputs": {},
           "fields": { "SOUND_MENU": ["Wobble", null] },
           "shadow": true,
-          "topLevel": false
-        },
-        "q}R:$11r]k;~w_`zJZ3i": {
-          "opcode": "data_setvariableto",
-          "next": null,
-          "parent": "3YRx#oY+p]4xCVVJ1M@K",
-          "inputs": { "VALUE": [1, [10, "0"]] },
-          "fields": { "VARIABLE": ["連続正解数", "mR#5[r2Ks,9$4ow;!W*;"] },
-          "shadow": false,
           "topLevel": false
         },
         "N}{~5MV2H-vq%!?yqMsh": {
@@ -413,24 +385,7 @@
       "rotationStyle": "all around"
     }
   ],
-  "monitors": [
-    {
-      "id": "mR#5[r2Ks,9$4ow;!W*;",
-      "mode": "default",
-      "opcode": "data_variable",
-      "params": { "VARIABLE": "連続正解数" },
-      "spriteName": null,
-      "value": "0",
-      "width": 0,
-      "height": 0,
-      "x": 174,
-      "y": 248,
-      "visible": true,
-      "sliderMin": 0,
-      "sliderMax": 100,
-      "isDiscrete": true
-    }
-  ],
+  "monitors": [],
   "extensions": [],
   "meta": {
     "semver": "3.0.0",
