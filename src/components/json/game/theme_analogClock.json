@@ -1,0 +1,398 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": { "`jEk@4|i[#Fk?(8x)AV.-my variable": ["変数", 0] },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "背景1",
+          "dataFormat": "svg",
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ポップ",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "videoState": "on",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "スプライト2",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "fe903568a49f05b72921a01f668be7de",
+          "md5ext": "fe903568a49f05b72921a01f668be7de.svg",
+          "rotationCenterX": 247.833245,
+          "rotationCenterY": 189.62329999999997
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ポップ",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    },
+    {
+      "isStage": false,
+      "name": "時針",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "j%`VBX*l{qiH5ghNSkI`": {
+          "opcode": "event_whenflagclicked",
+          "next": "r]-|:OcX/G|]ySb/!X-}",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 44,
+          "y": 44
+        },
+        "r]-|:OcX/G|]ySb/!X-}": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "j%`VBX*l{qiH5ghNSkI`",
+          "inputs": { "SUBSTACK": [2, "RKYOw^7DlS0y8Nv7a@Af"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "RKYOw^7DlS0y8Nv7a@Af": {
+          "opcode": "motion_pointindirection",
+          "next": null,
+          "parent": "r]-|:OcX/G|]ySb/!X-}",
+          "inputs": { "DIRECTION": [3, "H/);i-}7{yQWQq%S*V`z", [8, "90"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "0_QY#HlI%Nl1d[d5GX}K": {
+          "opcode": "operator_multiply",
+          "next": null,
+          "parent": "H/);i-}7{yQWQq%S*V`z",
+          "inputs": {
+            "NUM1": [3, "1DO[U:m]EuVX)h:|^jae", [4, ""]],
+            "NUM2": [1, [4, "30"]]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "1DO[U:m]EuVX)h:|^jae": {
+          "opcode": "sensing_current",
+          "next": null,
+          "parent": "0_QY#HlI%Nl1d[d5GX}K",
+          "inputs": {},
+          "fields": { "CURRENTMENU": ["HOUR"] },
+          "shadow": false,
+          "topLevel": false
+        },
+        "H/);i-}7{yQWQq%S*V`z": {
+          "opcode": "operator_add",
+          "next": null,
+          "parent": "RKYOw^7DlS0y8Nv7a@Af",
+          "inputs": {
+            "NUM1": [3, "0_QY#HlI%Nl1d[d5GX}K", [4, ""]],
+            "NUM2": [3, "BaherSB9XJvFcMgdL5[v", [4, ""]]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Xgmm}6@I4`Ct09Jfvd5Y": {
+          "opcode": "sensing_current",
+          "next": null,
+          "parent": "BaherSB9XJvFcMgdL5[v",
+          "inputs": {},
+          "fields": { "CURRENTMENU": ["MINUTE", null] },
+          "shadow": false,
+          "topLevel": false
+        },
+        "BaherSB9XJvFcMgdL5[v": {
+          "opcode": "operator_multiply",
+          "next": null,
+          "parent": "H/);i-}7{yQWQq%S*V`z",
+          "inputs": {
+            "NUM1": [3, "Xgmm}6@I4`Ct09Jfvd5Y", [4, ""]],
+            "NUM2": [1, [4, "0.5"]]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "3bbcc8c011bb3ae94b2c1e2832a94254",
+          "md5ext": "3bbcc8c011bb3ae94b2c1e2832a94254.svg",
+          "rotationCenterX": 0.7500000000000568,
+          "rotationCenterY": 1.4374999999999716
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ポップ",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 2,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": 148,
+      "draggable": false,
+      "rotationStyle": "all around"
+    },
+    {
+      "isStage": false,
+      "name": "分針",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "?}95J5,6,HNK3j@c5Z]t": {
+          "opcode": "event_whenflagclicked",
+          "next": ";I5irlLM63;R*+FDP%.C",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 44,
+          "y": 44
+        },
+        ";I5irlLM63;R*+FDP%.C": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "?}95J5,6,HNK3j@c5Z]t",
+          "inputs": { "SUBSTACK": [2, "=x4PXfKYu|l%V^({O+Cy"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "=x4PXfKYu|l%V^({O+Cy": {
+          "opcode": "motion_pointindirection",
+          "next": null,
+          "parent": ";I5irlLM63;R*+FDP%.C",
+          "inputs": { "DIRECTION": [3, "%:s,aD1S%MjuBf]:sS)R", [8, "90"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "%:s,aD1S%MjuBf]:sS)R": {
+          "opcode": "operator_multiply",
+          "next": null,
+          "parent": "=x4PXfKYu|l%V^({O+Cy",
+          "inputs": {
+            "NUM1": [3, "]UZ-QZ;2GUUt.Q*,x0M3", [4, ""]],
+            "NUM2": [1, [4, "6"]]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "]UZ-QZ;2GUUt.Q*,x0M3": {
+          "opcode": "sensing_current",
+          "next": null,
+          "parent": "%:s,aD1S%MjuBf]:sS)R",
+          "inputs": {},
+          "fields": { "CURRENTMENU": ["MINUTE", null] },
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "0ee929468dbe818469cac03b832d4994",
+          "md5ext": "0ee929468dbe818469cac03b832d4994.svg",
+          "rotationCenterX": 1.8461134975471225,
+          "rotationCenterY": 3.078709118405868
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ポップ",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 4,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": -24,
+      "draggable": false,
+      "rotationStyle": "all around"
+    },
+    {
+      "isStage": false,
+      "name": "秒針",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "d`cgoI#.:KA`cyss)]aN": {
+          "opcode": "event_whenflagclicked",
+          "next": "Z7%CiT%7XeQAdqDt*Qv5",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 372,
+          "y": 299
+        },
+        "g{E7_[}yiNnmU!|sxK(B": {
+          "opcode": "sensing_current",
+          "next": null,
+          "parent": "U,[YQ,40j%iw/MO[GCEn",
+          "inputs": {},
+          "fields": { "CURRENTMENU": ["SECOND", null] },
+          "shadow": false,
+          "topLevel": false
+        },
+        "Z7%CiT%7XeQAdqDt*Qv5": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "d`cgoI#.:KA`cyss)]aN",
+          "inputs": { "SUBSTACK": [2, "QF{vuV$z/Ezm)*EfR_F,"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "U,[YQ,40j%iw/MO[GCEn": {
+          "opcode": "operator_multiply",
+          "next": null,
+          "parent": "QF{vuV$z/Ezm)*EfR_F,",
+          "inputs": {
+            "NUM1": [3, "g{E7_[}yiNnmU!|sxK(B", [4, ""]],
+            "NUM2": [1, [4, "6"]]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "QF{vuV$z/Ezm)*EfR_F,": {
+          "opcode": "motion_pointindirection",
+          "next": null,
+          "parent": "Z7%CiT%7XeQAdqDt*Qv5",
+          "inputs": { "DIRECTION": [3, "U,[YQ,40j%iw/MO[GCEn", [8, "90"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "ba4919cae045c9554b877276a135c162",
+          "md5ext": "ba4919cae045c9554b877276a135c162.svg",
+          "rotationCenterX": 3.2500000000000284,
+          "rotationCenterY": 4.4375
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ポップ",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 3,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": -84,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [],
+  "extensions": [],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "1.0.5",
+    "agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+  }
+}

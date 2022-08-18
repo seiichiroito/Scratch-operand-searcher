@@ -15,6 +15,14 @@ import enjoyMusic from "./game/enjoyMusic.json";
 import stampArt from "./game/stampArt.json";
 import moveBackgroundArt from "./game/moveBackgroundArt.json";
 
+import scrollShooting from "./game/scrollShooting.json";
+import barrageShooting from "./game/barrageShooting.json";
+
+import theme_analogClock from "./game/theme_analogClock.json";
+import theme_mathQuiz from "./game/theme_mathQuiz.json";
+import theme_playMusic from "./game/theme_playMusic.json";
+
+import arrange_study_stopBlock from "./game/arrange_study_stopBlock.json";
 export default [
   {
     name: "★0.5 迷路ゲーム",
@@ -75,5 +83,29 @@ export default [
   {
     name: "★1 うごく背景アート",
     game: moveBackgroundArt,
+  },
+  {
+    name: "★3 スクロールシューティング",
+    game: scrollShooting,
+  },
+  {
+    name: "★3 弾幕シューティング",
+    game: barrageShooting,
+  },
+  {
+    name: "テーマカタログ: 楽器をえんそうしよう♪",
+    game: theme_playMusic,
+  },
+  {
+    name: "テーマカタログ: 計算クイズ",
+    game: theme_mathQuiz,
+  },
+  {
+    name: "テーマカタログ: アナログ時計",
+    game: theme_analogClock,
+  },
+  {
+    name: "アレンジカード(けんきゅう) : 止めるブロックの研究",
+    game: arrange_study_stopBlock,
   },
 ];

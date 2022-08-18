@@ -1,0 +1,440 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "`jEk@4|i[#Fk?(8x)AV.-my variable": ["変数", 0],
+        "mR#5[r2Ks,9$4ow;!W*;": ["連続正解数", "0"],
+        "nsJluRtrcp1WkWC%RzXu": ["数1", 86],
+        "`Z#7:-D6v)wtOs_{%N%Z": ["数2", 54]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "^z8|{Rp,2C]giQ^h9Lsp": {
+          "opcode": "event_whenflagclicked",
+          "next": "D]#y~*Jj+^%xqSaJG3pX",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 36,
+          "y": 324
+        },
+        "LUbya[/U74MC@)}+VlNi": {
+          "opcode": "sound_playuntildone",
+          "next": null,
+          "parent": "D]#y~*Jj+^%xqSaJG3pX",
+          "inputs": { "SOUND_MENU": [1, "EA)`nXW845wF(*Aw%7Z~"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "EA)`nXW845wF(*Aw%7Z~": {
+          "opcode": "sound_sounds_menu",
+          "next": null,
+          "parent": "LUbya[/U74MC@)}+VlNi",
+          "inputs": {},
+          "fields": { "SOUND_MENU": ["Dance Funky", null] },
+          "shadow": true,
+          "topLevel": false
+        },
+        "D]#y~*Jj+^%xqSaJG3pX": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "^z8|{Rp,2C]giQ^h9Lsp",
+          "inputs": { "SUBSTACK": [2, "LUbya[/U74MC@)}+VlNi"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 1,
+      "costumes": [
+        {
+          "name": "背景1",
+          "dataFormat": "svg",
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        },
+        {
+          "name": "Theater",
+          "bitmapResolution": 2,
+          "dataFormat": "png",
+          "assetId": "c2b097bc5cdb6a14ef5485202bc5ee76",
+          "md5ext": "c2b097bc5cdb6a14ef5485202bc5ee76.png",
+          "rotationCenterX": 480,
+          "rotationCenterY": 360
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ポップ",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        },
+        {
+          "name": "Dance Funky",
+          "assetId": "a8383eaddc02d33714dc5832c02ccf13",
+          "dataFormat": "wav",
+          "rate": 22050,
+          "sampleCount": 111761,
+          "md5ext": "a8383eaddc02d33714dc5832c02ccf13.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "videoState": "on",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "スプライト1",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "UnMuCq1sV;D+sFgs-[qr": {
+          "opcode": "event_whenflagclicked",
+          "next": "0qtBg2;M[n|enEfNVlxl",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 227,
+          "y": 2748
+        },
+        "0qtBg2;M[n|enEfNVlxl": {
+          "opcode": "data_setvariableto",
+          "next": "f8{H*NK:P8WK~E(Jab;R",
+          "parent": "UnMuCq1sV;D+sFgs-[qr",
+          "inputs": { "VALUE": [1, [10, "0"]] },
+          "fields": { "VARIABLE": ["連続正解数", "mR#5[r2Ks,9$4ow;!W*;"] },
+          "shadow": false,
+          "topLevel": false
+        },
+        "f8{H*NK:P8WK~E(Jab;R": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "0qtBg2;M[n|enEfNVlxl",
+          "inputs": { "SUBSTACK": [2, "CL)3u`||5NqUPG,oOZZ|"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "CL)3u`||5NqUPG,oOZZ|": {
+          "opcode": "data_setvariableto",
+          "next": "N`WY%m`}+=%@r%#kIPrH",
+          "parent": "f8{H*NK:P8WK~E(Jab;R",
+          "inputs": { "VALUE": [3, "IYg1eQO!NX1^BFLuhu5.", [10, "0"]] },
+          "fields": { "VARIABLE": ["数1", "nsJluRtrcp1WkWC%RzXu"] },
+          "shadow": false,
+          "topLevel": false
+        },
+        "IYg1eQO!NX1^BFLuhu5.": {
+          "opcode": "operator_random",
+          "next": null,
+          "parent": "CL)3u`||5NqUPG,oOZZ|",
+          "inputs": { "FROM": [1, [4, "1"]], "TO": [1, [4, "99"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "N`WY%m`}+=%@r%#kIPrH": {
+          "opcode": "data_setvariableto",
+          "next": "=XbdOZB9h_XfEuxy`?U/",
+          "parent": "CL)3u`||5NqUPG,oOZZ|",
+          "inputs": { "VALUE": [3, "NI5zT|bLU`m:*8$*`N`@", [10, "0"]] },
+          "fields": { "VARIABLE": ["数2", "`Z#7:-D6v)wtOs_{%N%Z"] },
+          "shadow": false,
+          "topLevel": false
+        },
+        "NI5zT|bLU`m:*8$*`N`@": {
+          "opcode": "operator_random",
+          "next": null,
+          "parent": "N`WY%m`}+=%@r%#kIPrH",
+          "inputs": { "FROM": [1, [4, "1"]], "TO": [1, [4, "99"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "=XbdOZB9h_XfEuxy`?U/": {
+          "opcode": "sensing_askandwait",
+          "next": ";rMjDpnG2zhBEd%9L|k(",
+          "parent": "N`WY%m`}+=%@r%#kIPrH",
+          "inputs": {
+            "QUESTION": [
+              3,
+              ":nnqTI_us|ch_mEts}a;",
+              [10, "あなたの名前は何ですか?"]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ":nnqTI_us|ch_mEts}a;": {
+          "opcode": "operator_join",
+          "next": null,
+          "parent": "=XbdOZB9h_XfEuxy`?U/",
+          "inputs": {
+            "STRING1": [3, "MWTtuF-k@BrWpDqRsjhd", [10, "りんご "]],
+            "STRING2": [1, [10, "= ?"]]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "MWTtuF-k@BrWpDqRsjhd": {
+          "opcode": "operator_join",
+          "next": null,
+          "parent": ":nnqTI_us|ch_mEts}a;",
+          "inputs": {
+            "STRING1": [
+              3,
+              [12, "数1", "nsJluRtrcp1WkWC%RzXu"],
+              [10, "りんご "]
+            ],
+            "STRING2": [3, "NYt60xE1B^qY/^OjKEm3", [10, "バナナ"]]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "NYt60xE1B^qY/^OjKEm3": {
+          "opcode": "operator_join",
+          "next": null,
+          "parent": "MWTtuF-k@BrWpDqRsjhd",
+          "inputs": {
+            "STRING1": [1, [10, "+"]],
+            "STRING2": [3, [12, "数2", "`Z#7:-D6v)wtOs_{%N%Z"], [10, "バナナ"]]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        ";rMjDpnG2zhBEd%9L|k(": {
+          "opcode": "control_if_else",
+          "next": "N}{~5MV2H-vq%!?yqMsh",
+          "parent": "=XbdOZB9h_XfEuxy`?U/",
+          "inputs": {
+            "CONDITION": [2, "xYmgpD9zOw%Vw,:;aEf?"],
+            "SUBSTACK": [2, "X_sNbXW*I:]E61jL372a"],
+            "SUBSTACK2": [2, ";6)L)|c|)kv6jKm|az1c"]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "xYmgpD9zOw%Vw,:;aEf?": {
+          "opcode": "operator_equals",
+          "next": null,
+          "parent": ";rMjDpnG2zhBEd%9L|k(",
+          "inputs": {
+            "OPERAND1": [3, "M$%v,j4OSMFcH`/0kkY?", [10, ""]],
+            "OPERAND2": [3, "1gbxH*Ic5K?E{I~enzYK", [10, "50"]]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "M$%v,j4OSMFcH`/0kkY?": {
+          "opcode": "sensing_answer",
+          "next": null,
+          "parent": "xYmgpD9zOw%Vw,:;aEf?",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "1gbxH*Ic5K?E{I~enzYK": {
+          "opcode": "operator_add",
+          "next": null,
+          "parent": "xYmgpD9zOw%Vw,:;aEf?",
+          "inputs": {
+            "NUM1": [3, [12, "数1", "nsJluRtrcp1WkWC%RzXu"], [4, ""]],
+            "NUM2": [3, [12, "数2", "`Z#7:-D6v)wtOs_{%N%Z"], [4, ""]]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "X_sNbXW*I:]E61jL372a": {
+          "opcode": "looks_say",
+          "next": "WF2SU.Ld;dsZ.sm)g2U}",
+          "parent": ";rMjDpnG2zhBEd%9L|k(",
+          "inputs": { "MESSAGE": [1, [10, "せいかい！"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "WF2SU.Ld;dsZ.sm)g2U}": {
+          "opcode": "sound_play",
+          "next": "78)!pb)OpK+:vXt%rAnw",
+          "parent": "X_sNbXW*I:]E61jL372a",
+          "inputs": { "SOUND_MENU": [1, "4A[uW$ES#C_j:~8pV*o#"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "4A[uW$ES#C_j:~8pV*o#": {
+          "opcode": "sound_sounds_menu",
+          "next": null,
+          "parent": "WF2SU.Ld;dsZ.sm)g2U}",
+          "inputs": {},
+          "fields": { "SOUND_MENU": ["Doorbell", null] },
+          "shadow": true,
+          "topLevel": false
+        },
+        "78)!pb)OpK+:vXt%rAnw": {
+          "opcode": "data_changevariableby",
+          "next": null,
+          "parent": "WF2SU.Ld;dsZ.sm)g2U}",
+          "inputs": { "VALUE": [1, [4, "1"]] },
+          "fields": { "VARIABLE": ["連続正解数", "mR#5[r2Ks,9$4ow;!W*;"] },
+          "shadow": false,
+          "topLevel": false
+        },
+        ";6)L)|c|)kv6jKm|az1c": {
+          "opcode": "looks_say",
+          "next": "3YRx#oY+p]4xCVVJ1M@K",
+          "parent": ";rMjDpnG2zhBEd%9L|k(",
+          "inputs": { "MESSAGE": [1, [10, "はずれ！"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "3YRx#oY+p]4xCVVJ1M@K": {
+          "opcode": "sound_play",
+          "next": "q}R:$11r]k;~w_`zJZ3i",
+          "parent": ";6)L)|c|)kv6jKm|az1c",
+          "inputs": { "SOUND_MENU": [1, "(l=}:V*KZ!)%KrTy:Jq;"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "(l=}:V*KZ!)%KrTy:Jq;": {
+          "opcode": "sound_sounds_menu",
+          "next": null,
+          "parent": "3YRx#oY+p]4xCVVJ1M@K",
+          "inputs": {},
+          "fields": { "SOUND_MENU": ["Wobble", null] },
+          "shadow": true,
+          "topLevel": false
+        },
+        "q}R:$11r]k;~w_`zJZ3i": {
+          "opcode": "data_setvariableto",
+          "next": null,
+          "parent": "3YRx#oY+p]4xCVVJ1M@K",
+          "inputs": { "VALUE": [1, [10, "0"]] },
+          "fields": { "VARIABLE": ["連続正解数", "mR#5[r2Ks,9$4ow;!W*;"] },
+          "shadow": false,
+          "topLevel": false
+        },
+        "N}{~5MV2H-vq%!?yqMsh": {
+          "opcode": "control_wait",
+          "next": null,
+          "parent": ";rMjDpnG2zhBEd%9L|k(",
+          "inputs": { "DURATION": [1, [5, "2"]] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "bcf454acf82e4504149f7ffe07081dbc",
+          "md5ext": "bcf454acf82e4504149f7ffe07081dbc.svg",
+          "rotationCenterX": 48,
+          "rotationCenterY": 50
+        },
+        {
+          "name": "コスチューム2",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "0fb9be3e8397c983338cb71dc84d0b25",
+          "md5ext": "0fb9be3e8397c983338cb71dc84d0b25.svg",
+          "rotationCenterX": 46,
+          "rotationCenterY": 53
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ニャー",
+          "assetId": "83c36d806dc92327b9e7049a565c6bff",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 37376,
+          "md5ext": "83c36d806dc92327b9e7049a565c6bff.wav"
+        },
+        {
+          "name": "Doorbell",
+          "assetId": "b67db6ed07f882e52a9ef4dbb76f5f64",
+          "dataFormat": "wav",
+          "rate": 22050,
+          "sampleCount": 109729,
+          "md5ext": "b67db6ed07f882e52a9ef4dbb76f5f64.wav"
+        },
+        {
+          "name": "Wobble",
+          "assetId": "9913a64bfb5cfa6bb30ec24002cce56b",
+          "dataFormat": "wav",
+          "rate": 22050,
+          "sampleCount": 40641,
+          "md5ext": "9913a64bfb5cfa6bb30ec24002cce56b.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 1,
+      "y": -16,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [
+    {
+      "id": "mR#5[r2Ks,9$4ow;!W*;",
+      "mode": "default",
+      "opcode": "data_variable",
+      "params": { "VARIABLE": "連続正解数" },
+      "spriteName": null,
+      "value": "0",
+      "width": 0,
+      "height": 0,
+      "x": 174,
+      "y": 248,
+      "visible": true,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    }
+  ],
+  "extensions": [],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "1.0.5",
+    "agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+  }
+}

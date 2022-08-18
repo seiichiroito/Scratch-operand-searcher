@@ -1,0 +1,422 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": { "`jEk@4|i[#Fk?(8x)AV.-my variable": ["変数", 0] },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 1,
+      "costumes": [
+        {
+          "name": "背景1",
+          "dataFormat": "svg",
+          "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+          "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        },
+        {
+          "name": "Theater",
+          "bitmapResolution": 2,
+          "dataFormat": "png",
+          "assetId": "c2b097bc5cdb6a14ef5485202bc5ee76",
+          "md5ext": "c2b097bc5cdb6a14ef5485202bc5ee76.png",
+          "rotationCenterX": 480,
+          "rotationCenterY": 360
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ポップ",
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "videoState": "on",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "スプライト1",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "コスチューム1",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "bcf454acf82e4504149f7ffe07081dbc",
+          "md5ext": "bcf454acf82e4504149f7ffe07081dbc.svg",
+          "rotationCenterX": 48,
+          "rotationCenterY": 50
+        },
+        {
+          "name": "コスチューム2",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "0fb9be3e8397c983338cb71dc84d0b25",
+          "md5ext": "0fb9be3e8397c983338cb71dc84d0b25.svg",
+          "rotationCenterX": 46,
+          "rotationCenterY": 53
+        }
+      ],
+      "sounds": [
+        {
+          "name": "ニャー",
+          "assetId": "83c36d806dc92327b9e7049a565c6bff",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 37376,
+          "md5ext": "83c36d806dc92327b9e7049a565c6bff.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 4,
+      "visible": true,
+      "x": -162,
+      "y": -58,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    },
+    {
+      "isStage": false,
+      "name": "Bell",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "w66*4O^*YhpFDDE)(2]d": {
+          "opcode": "event_whenthisspriteclicked",
+          "next": "!+f5eA^.L3mEYok(?w9N",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 44,
+          "y": 44
+        },
+        "!+f5eA^.L3mEYok(?w9N": {
+          "opcode": "sound_play",
+          "next": null,
+          "parent": "w66*4O^*YhpFDDE)(2]d",
+          "inputs": { "SOUND_MENU": [1, "/1OJUljFp=-8LTzt7oMx"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "/1OJUljFp=-8LTzt7oMx": {
+          "opcode": "sound_sounds_menu",
+          "next": null,
+          "parent": "!+f5eA^.L3mEYok(?w9N",
+          "inputs": {},
+          "fields": { "SOUND_MENU": ["bell toll"] },
+          "shadow": true,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "bell1",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "8c0234fe1bfd36f5a72e975fbbc18bfd",
+          "md5ext": "8c0234fe1bfd36f5a72e975fbbc18bfd.svg",
+          "rotationCenterX": 59,
+          "rotationCenterY": 69
+        }
+      ],
+      "sounds": [
+        {
+          "name": "xylo1",
+          "assetId": "6ac484e97c1c1fe1384642e26a125e70",
+          "dataFormat": "wav",
+          "format": "adpcm",
+          "rate": 22050,
+          "sampleCount": 238761,
+          "md5ext": "6ac484e97c1c1fe1384642e26a125e70.wav"
+        },
+        {
+          "name": "bell toll",
+          "assetId": "25d61e79cbeba4041eebeaebd7bf9598",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 180672,
+          "md5ext": "25d61e79cbeba4041eebeaebd7bf9598.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 2,
+      "visible": true,
+      "x": 58,
+      "y": -96,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    },
+    {
+      "isStage": false,
+      "name": "Drum",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "{-*l/.Bp0+T+EN_Xkqc/": {
+          "opcode": "event_whenthisspriteclicked",
+          "next": "=TSDC@r6u2:rw8UmtG1Q",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 252,
+          "y": 227
+        },
+        "=TSDC@r6u2:rw8UmtG1Q": {
+          "opcode": "music_playDrumForBeats",
+          "next": null,
+          "parent": "{-*l/.Bp0+T+EN_Xkqc/",
+          "inputs": {
+            "DRUM": [1, "?%dMwAU#0dOn7@BU-#(e"],
+            "BEATS": [1, [4, "0.25"]]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "?%dMwAU#0dOn7@BU-#(e": {
+          "opcode": "music_menu_DRUM",
+          "next": null,
+          "parent": "=TSDC@r6u2:rw8UmtG1Q",
+          "inputs": {},
+          "fields": { "DRUM": ["1", null] },
+          "shadow": true,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "drum-a",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "ce6971317035091341ec40571c9056e9",
+          "md5ext": "ce6971317035091341ec40571c9056e9.svg",
+          "rotationCenterX": 43,
+          "rotationCenterY": 60
+        },
+        {
+          "name": "drum-b",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "47531b5675be696d0540eb120d5d0678",
+          "md5ext": "47531b5675be696d0540eb120d5d0678.svg",
+          "rotationCenterX": 43,
+          "rotationCenterY": 60
+        }
+      ],
+      "sounds": [
+        {
+          "name": "High Tom",
+          "assetId": "d623f99b3c8d33932eb2c6c9cfd817c5",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 24640,
+          "md5ext": "d623f99b3c8d33932eb2c6c9cfd817c5.wav"
+        },
+        {
+          "name": "Low Tom",
+          "assetId": "1569bbbd8952b0575e5a5cb5aefb50ba",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 40000,
+          "md5ext": "1569bbbd8952b0575e5a5cb5aefb50ba.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 3,
+      "visible": true,
+      "x": -69,
+      "y": -89,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    },
+    {
+      "isStage": false,
+      "name": "Guitar",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "_QfG{ZlS=LPV+#;lBQU(": {
+          "opcode": "event_whenthisspriteclicked",
+          "next": "|MrB*`4UMw)_;L]NDI;z",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 44,
+          "y": 44
+        },
+        "|MrB*`4UMw)_;L]NDI;z": {
+          "opcode": "sound_play",
+          "next": null,
+          "parent": "_QfG{ZlS=LPV+#;lBQU(",
+          "inputs": { "SOUND_MENU": [1, "lh,eCMPfw:HfFo;9.|2r"] },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "lh,eCMPfw:HfFo;9.|2r": {
+          "opcode": "sound_sounds_menu",
+          "next": null,
+          "parent": "|MrB*`4UMw)_;L]NDI;z",
+          "inputs": {},
+          "fields": { "SOUND_MENU": ["G Guitar"] },
+          "shadow": true,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "guitar-a",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "8704489dcf1a3ca93c5db40ebe5acd38",
+          "md5ext": "8704489dcf1a3ca93c5db40ebe5acd38.svg",
+          "rotationCenterX": 47,
+          "rotationCenterY": 83
+        },
+        {
+          "name": "guitar-b",
+          "bitmapResolution": 1,
+          "dataFormat": "svg",
+          "assetId": "e0423f4743f39456dade16fa1223d6b0",
+          "md5ext": "e0423f4743f39456dade16fa1223d6b0.svg",
+          "rotationCenterX": 47,
+          "rotationCenterY": 83
+        }
+      ],
+      "sounds": [
+        {
+          "name": "C Guitar",
+          "assetId": "22baa07795a9a524614075cdea543793",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 89728,
+          "md5ext": "22baa07795a9a524614075cdea543793.wav"
+        },
+        {
+          "name": "D Guitar",
+          "assetId": "2dbcfae6a55738f94bbb40aa5fcbf7ce",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 82240,
+          "md5ext": "2dbcfae6a55738f94bbb40aa5fcbf7ce.wav"
+        },
+        {
+          "name": "E Guitar",
+          "assetId": "4b5d1da83e59bf35578324573c991666",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 76800,
+          "md5ext": "4b5d1da83e59bf35578324573c991666.wav"
+        },
+        {
+          "name": "F Guitar",
+          "assetId": "b51d086aeb1921ec405561df52ecbc50",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 72832,
+          "md5ext": "b51d086aeb1921ec405561df52ecbc50.wav"
+        },
+        {
+          "name": "G Guitar",
+          "assetId": "98a835713ecea2f3ef9f4f442d52ad20",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 67200,
+          "md5ext": "98a835713ecea2f3ef9f4f442d52ad20.wav"
+        },
+        {
+          "name": "A Guitar",
+          "assetId": "ee753e87d212d4b2fb650ca660f1e839",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 63744,
+          "md5ext": "ee753e87d212d4b2fb650ca660f1e839.wav"
+        },
+        {
+          "name": "B Guitar",
+          "assetId": "2ae2d67de62df8ca54d638b4ad2466c3",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 59008,
+          "md5ext": "2ae2d67de62df8ca54d638b4ad2466c3.wav"
+        },
+        {
+          "name": "C2 guitar",
+          "assetId": "c8d2851bd99d8e0ce6c1f05e4acc7f34",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 55424,
+          "md5ext": "c8d2851bd99d8e0ce6c1f05e4acc7f34.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 143,
+      "y": -75,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [],
+  "extensions": ["music"],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "1.0.5",
+    "agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+  }
+}
