@@ -218,9 +218,14 @@ function operator_def(search_operator) {
     return opcodes.value.filter((opcode) => {
       var target_input;
       if (search_operator.find((el) => el === opcode.opcode)) {
-        target_input = Object.values(opcode.inputs).find(
+        var target_v = Object.values(opcode.inputs).find(
           (input) => input[0] === 1
-        )[1][1];
+        );
+
+        if (!target_v) {
+          return false;
+        }
+        target_input = target_v[1][1];
       }
       if (!target_input) {
         return false;
@@ -232,9 +237,14 @@ function operator_def(search_operator) {
     return opcodes.value.filter((opcode) => {
       var target_input;
       if (search_operator.find((el) => el === opcode.opcode)) {
-        target_input = Object.values(opcode.inputs).find(
+        var target_v = Object.values(opcode.inputs).find(
           (input) => input[0] === 1
-        )[1][1];
+        );
+
+        if (!target_v) {
+          return false;
+        }
+        target_input = target_v[1][1];
       }
       if (!target_input) {
         return false;

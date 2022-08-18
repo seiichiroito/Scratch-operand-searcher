@@ -4,8 +4,8 @@
     "sensing_touchingcolor",
     "sensing_coloristouchingcolor"
   ],
-  "もし○＝○なら": ["operator_equals", "string"],
-  "もし○<○なら、もしくは○=○なら": [
+  "もし○＝○なら（文字列判定）": ["operator_equals", "string"],
+  "もし○<○なら、もしくは○=○なら（数式判定）": [
     "operator_equals",
     "integer",
     "operator_gt",
