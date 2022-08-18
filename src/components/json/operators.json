@@ -45,14 +45,11 @@
   ],
   "○キーが押された": ["sensing_keypressed"],
   "○○と聞いて待つ": ["sensing_askandwait"],
-  "明るさ、音量・ビデオモーションなど": [
-    "looks_changeeffectby",
-    "looks_seteffectto",
+  "音量・ビデオモーションなど": [
     "sensing_loudness",
     "sound_volume",
     "sound_setvolumeto",
     "sound_changevolumeby",
-    "looks_cleargraphiceffects",
     "videoSensing_whenMotionGreaterThan"
   ],
   "文字列メッセージ": ["broadcasts", "string"],
